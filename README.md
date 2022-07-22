@@ -197,7 +197,53 @@ Una vez creada, ya podemos hacer el deploy, las instrucciones las encontramos en
     git commit -m "package.json [Actualizado] - npm start agregado" 
     git push 
     ```
-1. lo subimos  a heroku ``git push heroku main`` 
+1. Lo subimos a heroku ``git push heroku main`` y consultamos ==> [Mi HerokuApp] y debemos de ver la pagina que nos dice ``Acceso Denegado``
+
+1. Usamos **POSTMAN** para consultar la 
+
+
+    **URL**: ``https://xfullapp-restserver-curso-node.herokuapp.com/api/usuarios?q=hola&empresa=Cydsa&apikey=980786&limit=10&page=666``  
+    
+    **Metodos :** GET . 
+
+    **Body :** 
+
+    ```json
+    {
+    "nombre": "Engelbert",
+    "edad": 47
+    }
+    ```
+    
+
+
+    **URL :** ``https://xfullapp-restserver-curso-node.herokuapp.com/api/usuarios/15`` 
+    
+    **METODO :**: PUT 
+
+
+
+    **URL     :**  ``https://xfullapp-restserver-curso-node.herokuapp.com/api/usuarios``
+
+    **METODO  :** POST 
+
+    **body    :** 
+    ```json
+    {
+    "nombre": "Engelbert",
+    "edad": 47
+    }
+    ```
+
+
+    **URL :** ``https://xfullapp-restserver-curso-node.herokuapp.com/api/usuarios/`` .
+
+    **METODO :** DELETE 
+
+
+### Todas las rutas deben funcionar como hasta el momento qeu las probabamos en localhost:4500 , pero ahora ya estan en produccion 
+
+
 
 --- 
 **URL's**
@@ -213,6 +259,6 @@ Una vez creada, ya podemos hacer el deploy, las instrucciones las encontramos en
 [Heroku-Apps]:(https://dashboard.heroku.com/apps)
 [Heroku-NewApp]:(https://dashboard.heroku.com/new-app)
 [Heroku Deploy]:(https://dashboard.heroku.com/apps/xfullapp-restserver-curso-node/deploy/heroku-git) 
-
+[Mi HerokuApp]:(https://xfullapp-restserver-curso-node.herokuapp.com/)
 
 
