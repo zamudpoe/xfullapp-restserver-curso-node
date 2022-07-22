@@ -22,7 +22,7 @@ const usuariosGet = ( req , res ) => {
 const usuariosPost =  ( req, res ) => { 
   const { nombre, edad } = req.body  
   
-  console.log('\n\tNombre:'.cyan.bold + nombre.green.bold + ' Edad: '.cyan.bold + String(edad).yellow.bold +'.\n' ) 
+  console.log('\n\tNombre :'.cyan.bold + nombre.green.bold + ' Edad: '.cyan.bold + String(edad).yellow.bold +'.\n' ) 
 
   res.json({
     msg: "POST API - usuariosPost" , 

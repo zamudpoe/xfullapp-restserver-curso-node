@@ -243,7 +243,13 @@ Una vez creada, ya podemos hacer el deploy, las instrucciones las encontramos en
 
 ### Todas las rutas deben funcionar como hasta el momento qeu las probabamos en localhost:4500 , pero ahora ya estan en produccion 
 
+Ahora cualquier cambio en nuestro proyecto , lo subimos a 
 
+```unix
+git add .
+$ git commit -am "make it better"
+$ git push heroku master
+```
 
 --- 
 **URL's**
